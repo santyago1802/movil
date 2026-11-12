@@ -20,12 +20,12 @@ export default function HobbiesScreen() {
         onPress={() => Alert.alert("Hobby: Bisutería", "Investigación de mercados y diseño de pulseras artesanales resistentes e hipoalergénicas.")}
       />
 
-      <TarjetaHobby
-        titulo="Videojuegos y Gamificación"
-        detalle="Estrategias de niveles y sistemas de rachas"
-        nombreIcono="gamecontroller-outline"
-        onPress={() => Alert.alert("Hobby: Videojuegos", "Apasionado por las mecánicas de gamificación aplicadas al software y diseño de interfaces.")}
-      />
+    <TarjetaHobby
+  titulo="Videojuegos y Gamificación"
+  detalle="Estrategias de niveles y sistemas de rachas"
+  nombreIcono="game-controller-outline"
+  onPress={() => Alert.alert("Hobby: Videojuegos", "Apasionado por las mecánicas de gamificación aplicadas al software y diseño de interfaces.")}
+    />
     </ScrollView>
   );
 }

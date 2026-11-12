@@ -4,50 +4,46 @@ import { Tabs } from "expo-router";
 export default function Layout() {
   return (
     <Tabs screenOptions={{ tabBarActiveTintColor: "#2563eb" }}>
-      {/* Pestaña de Inicio */}
       <Tabs.Screen
         name="index"
         options={{
           title: "Inicio",
           headerTitle: "Datos Personales",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
+            <Ionicons name="person-outline" size={size} color={color as any} />
           ),
         }}
       />
 
-      {/* Pestaña de Estudios */}
       <Tabs.Screen
         name="estudios"
         options={{
           title: "Estudios",
           headerTitle: "Estudios Académicos",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="school-outline" size={size} color={color} />
+            <Ionicons name="school-outline" size={size} color={color as any} />
           ),
         }}
       />
 
-      {/* Pestaña de Experiencia */}
       <Tabs.Screen
         name="experiencia"
         options={{
           title: "Experiencia",
           headerTitle: "Experiencia Laboral",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="briefcase-outline" size={size} color={color} />
+            <Ionicons name="briefcase-outline" size={size} color={color as any} />
           ),
         }}
       />
 
-      {/* Pestaña de Hobbies */}
       <Tabs.Screen
         name="hobbies"
         options={{
           title: "Hobbies",
           headerTitle: "Intereses y Hobbies",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="heart-outline" size={size} color={color} />
+            <Ionicons name="heart-outline" size={size} color={color as any} />
           ),
         }}
       />
